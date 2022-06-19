@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 8px 10%;
+  background-color: #161b22;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #fccf5e;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+}
+
+/* Navigation bar section */
+li, a, button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+  width: 190px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #7fbb88;
+}
+
+/* Welcome section */
+.welcome {
+  display: flex;
+  justify-content:inline-block;
+  align-items: center;
+  background-color: #010409;
+}
+
+.welcome img {
+  width: 55%;
+}
+
+.text_img {
+  padding: 50px;
+  padding-right: 60px;
+}
+
+.text_img p {
+  color: #edf0f1;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.text_img h1{
+  font-size: 70px;
+  color: #d9a345;
+}
+
+/* Vector section */
+.mainsection {
+  background-color: #010409; 
+}
+
+.presentation-block {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 50px 10%;
+}
+
+.presentation-block img {
+  width: 30%;
+  padding: 10px;
+} 
