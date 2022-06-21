@@ -109,12 +109,13 @@ footer {
 /* Welcome section */
 .welcome {
   display: flex;
-  justify-content:inline-block;
+  justify-content:space-between;
   align-items: center;
   background-color: #010409;
 }
 
 .welcome img {
+  display: block;
   width: 55%;
 }
 
@@ -134,7 +135,26 @@ footer {
   color: #d9a345;
 }
 
-/* Vector section */
+@media (max-width: 1157px) {
+  .welcome {
+    display:inline-block;
+  }
+
+  .text_img {
+    padding: 30px;
+  }
+  
+  .welcome img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-bottom: 20px;
+  }
+
+}
+
+/*--------- Vector section ------------*/
 .mainsection {
   background-color: #010409; 
 }
