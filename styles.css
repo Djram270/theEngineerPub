@@ -128,6 +128,7 @@ footer {
   color: #edf0f1;
   margin-top: 10px;
   font-size: 25px;
+  
 }
 
 .text_img h1{
@@ -143,7 +144,15 @@ footer {
   .text_img {
     padding: 30px;
   }
+
+  .text_img p {
+    font-size: 18px;
+  }
   
+  .text_img h1 {
+    font-size: 62px;
+  }
+
   .welcome img {
     display: block;
     margin-left: auto;
