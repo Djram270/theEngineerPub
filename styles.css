@@ -13,13 +13,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  background-color: #161b22;
-}
-
 footer {
   padding: 10px;
   text-align: center;
@@ -31,6 +24,17 @@ footer {
 }
 
 /* Navigation bar section */
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #161b22;
+}
+
 .logo {
   cursor: pointer;
   width: 190px;
@@ -87,7 +91,8 @@ footer {
   display: flex;
   justify-content:center;
   align-items: center;
-  padding: 50px 10%;
+  padding: 30px 10%;
+  padding-top: 70px;
 }
 
 .presentation-block h1 {
@@ -154,7 +159,17 @@ footer {
   padding: 1%;
 }
 
+#text_vector2{
+  border: 2px solid red;
+  border-radius: 4px;
+  padding: 1%;
+}
+
 #magnitudebutton {
+  padding: 1%;
+}
+
+#directionbutton {
   padding: 1%;
 }
 
@@ -171,6 +186,7 @@ footer {
 
 /* Welcome section */
 .welcome {
+  padding-top: 30px;
   display: flex;
   justify-content:space-between;
   align-items: center;
