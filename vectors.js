@@ -1,3 +1,46 @@
+var buttonMagnitude = document.getElementById("magnitudebutton");
+var inputVector1 = document.getElementById("text_vector1");
+var inputVector2 = document.getElementById("text_vector2");
+
+buttonMagnitude.addEventListener("click", vectorCalculateMagnitude);
+
+function separateComponents(prmComponets){ //This function converts the 'inputVector1' array(String) into an array(Int) called 'arrayIntV1'
+    varComponets = prmComponets.value;
+    
+    var arrayIntV1 = varComponets.split(',').map(function(item){
+        return parseInt(item,10);
+    });
+
+    console.log(arrayIntV1);
+    return arrayIntV1;
+}
+
+class Vector {
+    constructor(prmEntradas){
+        this.entradas=prmEntradas;
+    }
+    calculateMagnitude(){
+        var magni = 0;
+        for(var i=0; i<this.entradas.length;i++){
+            magni = Math.pow(this.entradas[i],2) + magni;
+            console.log(magni);
+        }
+        magni = Math.sqrt(magni);
+        return magni;
+    }
+
+    get magnitude(){
+        return this.calculateMagnitude();
+    }
+}
+
+function vectorCalculateMagnitude(){
+    var vector1 = new Vector(separateComponents(inputVector1));
+    document.querySelector('#imprimir').innerHTML = vector1.magnitude;
+}
+
+
+/*
 var button = document.getElementById("littlebutton");
 var inputVector1 = document.getElementById("text_vector1");
 var inputVector2 = document.getElementById("text_vector2");
@@ -85,3 +128,4 @@ function doAll(){
     console.log(vector1.direction);
     console.log(vector1.unitVector);
 }
+*/

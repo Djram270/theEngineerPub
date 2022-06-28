@@ -151,6 +151,11 @@ footer {
 #text_vector1 {
   border: 2px solid red;
   border-radius: 4px;
+  padding: 1%;
+}
+
+#magnitudebutton {
+  padding: 1%;
 }
 
 .list-text li{
