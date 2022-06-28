@@ -78,7 +78,9 @@ footer {
 
 /*--------- Vector and  Circular Motion section------------*/
 .mainsection {
-  background-color: #010409; 
+  background-color: #273b47; 
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .presentation-block {
@@ -89,21 +91,21 @@ footer {
 }
 
 .presentation-block h1 {
-  color: #d9a345;
+  color: #7fbb88;
 }
 
 .MainDiscusion {
   margin-top: 2em;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
   max-width: 100%;
 }
 
 .development {
   background-color: white;
-  color: #273b47;
   font-size: 1.25em;
   text-align: left;
+  color: #273b47;
 }
 
 .development p {
@@ -140,6 +142,17 @@ footer {
   display: block;
 }
 
+.development form {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+#text_vector1 {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
 .list-text li{
   list-style:disc;
   list-style-position: outside;
@@ -156,7 +169,7 @@ footer {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background-color: #010409;
+  background-color: #F6F6F6;
 }
 
 .welcome img {
@@ -170,7 +183,6 @@ footer {
 }
 
 .text_img p {
-  color: #edf0f1;
   margin-top: 10px;
   font-size: 25px;
   
@@ -179,6 +191,7 @@ footer {
 .text_img h1{
   font-size: 70px;
   color: #d9a345;
+  text-decoration-style: solid;
 }
 
 /*--- Responsive section ---*/
@@ -244,5 +257,9 @@ footer {
     width: 70%;
     height: 100%;
     padding-bottom: 20px;
+  }
+  .MainDiscusion {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
